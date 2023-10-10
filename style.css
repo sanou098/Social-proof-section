@@ -144,10 +144,7 @@ img{
     width:100%;
   }
   article{
-    margin: 2rem 7rem;
-  }
-  *{
-    margin: initial;
+    margin: 2rem 7rem 0rem 7rem;
   }
   .flex{
     text-align: initial;
@@ -186,17 +183,10 @@ img{
   }
   .fb-2{
     position: relative;
-    top:1rem;
+    top:0.5rem;
   }
   .fb-3{
     position: relative;
-    top:2rem;
-  }
-  body {
-    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
-    background-position: right 48vw bottom 70vh,
-    left 35vw top 20vh;
-    background-repeat: no-repeat, no-repeat;
-  }
-}
+    top:1rem;
+  }}
 
