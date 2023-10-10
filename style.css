@@ -1,0 +1,200 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+@import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(bg-pattern-top-mobile.svg), url(bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+  }
+article{
+    margin:2rem;
+}
+.ratings{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    text-align: center;
+}
+h1{
+    color:hsl(300, 43%, 22%);
+    font-size:2.5em;
+    font-weight:900;
+}
+span{
+    font-size:1.2em;
+}
+.about{
+    text-align: center;
+}
+.info{
+    color:hsl(303, 10%, 53%);
+    font-weight:600;
+    text-align: center;
+    margin-top:1.5rem;
+}
+.type{
+    color:hsl(300, 43%, 22%);
+    font-weight:800;
+    margin-top:0.7rem;
+}
+.rating-padd{
+    padding:1rem 2.5rem;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom:1rem;
+    border-radius:0.5rem;
+}
+.rating-1{
+    margin-top:2rem;
+}
+img{
+    margin-right:0.4rem;
+}
+.profile{
+    width:40px;
+    border-radius:50%;
+}
+.frlex{
+    display:flex;
+}
+.fb{
+    padding:2.5rem 2rem 2.5rem 2rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius:0.5rem;
+    margin-bottom:1rem;
+}
+.name{
+    color:hsl(0, 0%, 100%);
+    font-weight:600;
+}
+.id{
+    color: hsl(333, 80%, 67%, 50%);
+    font-weight:600;
+}
+.aflex{
+    margin-left:1rem;
+}
+.feedback{
+    margin-top:1.5rem;
+    color: hsl(0, 0%, 100%, 85%);
+    font-weight: 500;
+}
+@media (min-width: 970px){
+  .rating{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about{
+    width:90%;
+  }
+  h1, .info{
+    text-align:initial;
+  }
+  h1{
+    width:80%;
+  }
+  .info{
+    width:100%;
+  }
+  article{
+    margin: 2rem 7rem;
+  }
+  .flex{
+    text-align: initial;
+    display:flex;
+
+  }
+  .type{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-left:1rem;
+    font-weight:700;
+  }
+  .rating-2{
+    position: relative;
+    right:2rem;
+    margin-left: 2rem;
+  }
+  .rating-1{
+    position: relative;
+    right: 4rem;
+    margin-top:3rem;
+    margin-left:3rem;
+  }
+  .rating-3{
+    margin-left: 1rem;
+  }
+  .feedbacks{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:2rem;
+  }
+  .fb{
+    padding:1.5rem 1rem;
+    width:90%;
+  }
+  .fb-2{
+    position: relative;
+    top:1rem;
+  }
+  .fb-3{
+    position: relative;
+    top:2rem;
+  }
+  body {
+    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
+    background-position: right 48vw bottom 70vh,
+    left 35vw top 20vh;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
