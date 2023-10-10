@@ -146,10 +146,12 @@ img{
   article{
     margin: 2rem 7rem;
   }
+  *{
+    margin: initial;
+  }
   .flex{
     text-align: initial;
     display:flex;
-
   }
   .type{
     display:flex;
